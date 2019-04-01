@@ -1,0 +1,12 @@
+C:\Projects\test-demo\TestDemo\TestDemo
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=TestDemo
+--content-root=C:\Projects\test-demo\TestDemo\TestDemo
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\About.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\Contact.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\Error.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\Index.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\_Layout.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\_ValidationScriptsPartial.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\_ViewImports.cshtml
+--file=C:\Projects\test-demo\TestDemo\TestDemo\Pages\_ViewStart.cshtml
