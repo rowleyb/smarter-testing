@@ -35,12 +35,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="ContactUs.Inquiry"></label> *
-                <textarea asp-for="ContactUs.Inquiry" rows="5" class="form-control"></textarea>
+                <textarea asp-for="ContactUs.Inquiry" rows="5" id="RequestInfo" class="form-control"></textarea>
                 <span asp-validation-for="ContactUs.Inquiry" />
             </div>
             <div class="form-group">
                 <label asp-for="ContactUs.Discovery"></label>
-                <input type="text" asp-for="ContactUs.Discovery" class="form-control" />
+                <input type="text" asp-for="ContactUs.Discovery" id="ContactUsDiscovery" class="form-control" />
                 <span asp-validation-for="ContactUs.Discovery" />
             </div>
             <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
