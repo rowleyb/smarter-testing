@@ -1,19 +1,54 @@
 ﻿@page
 @model ContactModel
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Contact Us";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="row">
+    <div class="col-xs-6">
+        <h3>@Model.Message</h3>
+        <address>
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone">P:</abbr>
+            425.555.0100
+        </address>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        <address>
+            <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        </address>
+    </div>
+    <div class="col-xs-6">
+        <h3>We want to hear from you!</h3>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="ContactUs.Name"></label> *
+                <input type="text" asp-for="ContactUs.Name" class="form-control" />
+                <span asp-validation-for="ContactUs.Name" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactUs.EmailAddress"></label> *
+                <input type="text" asp-for="ContactUs.EmailAddress" class="form-control" />
+                <span asp-validation-for="ContactUs.EmailAddress" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactUs.Inquiry"></label> *
+                <textarea asp-for="ContactUs.Inquiry" rows="5" class="form-control"></textarea>
+                <span asp-validation-for="ContactUs.Inquiry" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactUs.Discovery"></label>
+                <input type="text" asp-for="ContactUs.Discovery" class="form-control" />
+                <span asp-validation-for="ContactUs.Discovery" />
+            </div>
+            <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+}
